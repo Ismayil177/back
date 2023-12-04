@@ -1,0 +1,12 @@
+﻿.badge {
+pading:2px;
+border-radius:10px;
+}
+
+.badge-success {
+    border: 1px solid teal;
+}
+
+.badge-fail {
+    border: 1px solid red;
+}

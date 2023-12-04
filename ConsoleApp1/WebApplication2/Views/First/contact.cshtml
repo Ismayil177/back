@@ -1,0 +1,23 @@
+﻿@model string []
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contackt</title>
+</head>
+<body>
+    <ul>
+        @foreach (var item Model)
+        {
+            <li>@item</li>
+        }
+    </ul>
+    <hr />
+   </body>
+</html>

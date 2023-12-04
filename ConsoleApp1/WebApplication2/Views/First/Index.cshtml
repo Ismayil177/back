@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+   string[] meyveler = {"alma", "nar", "armud"};
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+   <h1>Salam </h1>
+   <ul>
+        @foreach(string meyve in meyveler)
+        {
+            <li>@meyve</li>
+        }
+    </ul>
+     
+    <hr />
+        
+      <ol>
+        @for(int i = 15; i<= 20; i++)
+        {
+            <li>
+                @i
+            </li>
+        }
+    </ol>
+
+       <div>@@mdo</div>
+
+    @{
+        int a = 20;
+        int b = 25;
+        int c = a + b;
+    }
+
+
+             <div class=" badge badge @( c % 2 == 0 ? "success" : "fail")">@c</div>
+                
+
+
+             @*<div class="badge @( c % 2 == 0 ? "badge-success" : "badge-fail")">@c</div>*@
+
+       
+
+@*    @if (c % 2 == 0)
+    {    
+        <div class="badge badge-success ">@c</div>
+    }
+    else
+    {
+        <div style = class="badge badge-fail ">@c</div>
+    }*@
+</body>
+</html>

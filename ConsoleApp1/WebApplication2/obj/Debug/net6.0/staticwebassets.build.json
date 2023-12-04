@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "1Taj13lPzsgw8jNNnIUYk1Z0exQ5Ekius+c/eFUMdHk=",
+  "Source": "WebApplication2",
+  "BasePath": "_content/WebApplication2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication2\\wwwroot",
+      "Source": "WebApplication2",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\P517backend\\ConsoleApp1\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\P517backend\\ConsoleApp1\\WebApplication2\\wwwroot\\assets\\css\\style.css",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\P517backend\\ConsoleApp1\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "assets/css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\style.css"
+    }
+  ]
+}

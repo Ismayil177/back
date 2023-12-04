@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewState</title>
+</head>
+<body>
+    <ul>
+    @foreach (var item in ViewBag.Fruits)
+    {
+        <li>@item</li>
+    }
+    </ul>  
+    <hr />
+    <ul>
+
+        @if (ViewData["Langs"] is string[] langs)
+        {
+            @foreach (var item in langs)
+            {
+                <li>@item</li>
+            }
+        }
+
+@*        @if (ViewData["Langs"] is string[])
+       {            
+        @foreach (var item in ViewData["Langs"] as string[])
+         {
+            <li>@item</li>
+         }
+        }*@
+        <hr />
+        <ul>
+            @{
+                var dataFromTempData = TempData.Peek("numbers");
+            }
+              @if (TempData["numbers"] is string[] numbers)
+            {
+                @foreach (var item in numbers)
+                {
+                    <li>@item</li>
+                }
+            }
+            <ul/>
+    </ul>
+</body>
+</html>
